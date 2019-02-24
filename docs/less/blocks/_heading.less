@@ -1,0 +1,60 @@
+.heading {
+	font-size: 28px;
+	letter-spacing: -0.5px;
+	font-weight: 700;
+	color: #333;
+	margin-top: 0;
+	margin-bottom: 30px;
+	position: relative;
+	
+	@media (min-width: 1200px) {
+		font-size: 38px;
+		margin-bottom: 40px;
+	}
+
+	&--smaller-margin {
+		margin-bottom: 20px;
+	}
+
+	&--price-smaller-margin {
+			margin-bottom: 14px;
+		}
+
+	@media (min-width: 1200px) {
+			&--price-smaller-margin {
+			margin-bottom: 20px;
+		}
+	}
+
+	
+
+	&--number:before {
+		width: 26px;
+		height: 26px;
+		display: block;
+		border-radius: 13px;
+		background-color: @orange;
+		color: #fff;
+		font-size: 16px;
+		font-weight: 700;
+		content: "0";
+		padding-top: 3px;
+  		padding-left: 8px;
+  		position: absolute;
+  		top: -43px;
+  		left: -13px;
+  		
+  		@media (min-width: 1200px) {
+  			top: -19px;
+  			left: -32px;
+		}
+	}
+
+	&--number-1:before {
+		content: "1";
+	}
+
+	&--number-2:before {
+		content: "2";
+	}
+}
